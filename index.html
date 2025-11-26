@@ -9,7 +9,8 @@
     html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
     body{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#fff7fb 0%, #fff0f3 100%);}
     .card{width:min(560px,92vw);background:var(--card);border-radius:20px;padding:48px 36px;box-shadow:0 8px 30px rgba(17,12,35,0.06);text-align:center}
-    .heart{
+    .heart-wrapper{width:150px;margin:0 auto 18px;animation:pop 1.2s ease-in-out infinite alternate;}
+    .heart-svg{width:150px;fill:var(--accent);}{
       width:140px;height:140px;margin:0 auto 18px;position:relative;transform:scale(1);animation:pop 1.2s ease-in-out infinite alternate;
     }
     .heart:before,.heart:after{content:'';position:absolute;left:50%;top:0;width:70px;height:110px;background:var(--accent);border-radius:70px 70px 0 0;transform-origin:center;}
@@ -29,11 +30,18 @@
 </head>
 <body>
   <div class="card" role="main">
-    <div class="heart" aria-hidden="true"></div>
+    <div class="heart-wrapper">
+      <svg class="heart-svg" viewBox="0 0 100 90">
+        <path d="M50 82 L12 44 C-8 24 8 0 30 6 C42 10 50 22 50 22 C50 22 58 10 70 6 C92 0 108 24 88 44 Z"/>
+      </svg>
+    </div>
     <h1>heyy jaaanu</h1>
     <p class="sub">think of meh to get rid of sadness 😌</p>
     <p class="note">sending you a tiny hug — imagine it warm and goofy 🤗</p>
-    <footer>— from your bsf 💕</footer>
+    
   </div>
 </body>
 </html>
+
+  
+   
